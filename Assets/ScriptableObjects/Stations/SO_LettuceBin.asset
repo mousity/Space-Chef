@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d92f8a95dd8f4c0448a033fca4160a13, type: 3}
+  m_Name: SO_LettuceBin
+  m_EditorClassIdentifier: Assembly-CSharp::StationType
+  id: LettuceBin
+  displayName: Lettuce Bin
+  sprite: {fileID: -902802197, guid: 3e8093decd3ec354c8e0337bb97cf97a, type: 3}
+  stationKind: 1
+  dispensedIngredientId: Lettuce
+  cutTime: 0
