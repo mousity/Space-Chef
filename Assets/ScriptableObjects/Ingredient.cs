@@ -10,4 +10,16 @@ public class Ingredient : ScriptableObject
     public Sprite cutSprite;
 
 
+    public Sprite GetSprite(IngredientStatus status)
+    {
+        switch (status)
+        {
+            case IngredientStatus.cut:
+                return cutSprite != null ? cutSprite : rawSprite;
+            case IngredientStatus.cooked:
+                return cookedSprite != null ? cookedSprite : rawSprite;
+            default:
+                return rawSprite;
+        }
+    }
 }
