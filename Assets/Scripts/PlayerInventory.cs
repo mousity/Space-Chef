@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    public string heldIngredientId = "";
+    public IngredientItem heldIngredientId;
 
     // Check if the player already has an item
     public bool HasItem()
     {
-        return heldIngredientId != "";
+        return heldIngredientId != null;
     }
 
-    public bool tryPickup(string ingredientId)
+    public bool tryPickup(IngredientItem ingredientId)
     {
         if(HasItem())
             return false;
@@ -20,17 +20,17 @@ public class PlayerInventory : MonoBehaviour
     }
 
     // Remove and return the held ingredient (used later for placing on counters)
-    public string Take()
+    public IngredientItem Take()
     {
-        string temp = heldIngredientId;
-        heldIngredientId = "";
+        IngredientItem temp = heldIngredientId;
+        heldIngredientId = null;
         return temp;
     }
 
     // Add the ingredient given
-    public string HoldOrSwap(string ingredient)
+    public IngredientItem HoldOrSwap(IngredientItem ingredient)
     {
-        string temp = heldIngredientId;
+        IngredientItem temp = heldIngredientId;
         heldIngredientId = ingredient;
         return temp;
     }

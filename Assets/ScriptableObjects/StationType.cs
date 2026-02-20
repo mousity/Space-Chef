@@ -13,7 +13,7 @@ public class StationType : ScriptableObject
     public StationKind stationKind;
 
     // Used only if it's an ingredient dispenser
-    public string dispensedIngredientId;
+    public IngredientItem dispensedIngredient;
 
     // Only for cutting boards
     public float cutTime = 0.8f;

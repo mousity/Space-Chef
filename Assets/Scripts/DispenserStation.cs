@@ -6,13 +6,13 @@ public class DispenserStation : MonoBehaviour, IInteractable
 
     public void Interact(PlayerInventory player)
     {
-        string ingredientId = stationType.dispensedIngredientId;
+        IngredientItem ingredientId = stationType.dispensedIngredient;
 
         bool success = player.tryPickup(ingredientId);
 
         if (success)
         {
-            Debug.Log("Dispensed: " + ingredientId);
+            Debug.Log("Dispensed: " + ingredientId.type.displayName);
         } else
         {
             Debug.Log("Player inventory full");

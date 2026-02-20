@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     public Rigidbody2D rigidBody;
-    Vector2 input;
     Vector2 moveInput;
 
     public DispenserStation dispenserInRange;
