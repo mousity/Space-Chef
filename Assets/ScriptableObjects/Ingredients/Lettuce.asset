@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dba1dcaa10c88346837d7aec45fd969, type: 3}
   m_Name: Lettuce
   m_EditorClassIdentifier: Assembly-CSharp::Ingredient
-  id: 
-  displayName: 
-  rawSprite: {fileID: 0}
+  id: lettuce
+  displayName: Lettuce
+  rawSprite: {fileID: -7182955379333523584, guid: f0adc9c3b1af52c4fbc07d864db5f253, type: 3}
   cookedSprite: {fileID: 0}
-  cutSprite: {fileID: 0}
+  cutSprite: {fileID: 4847093412914481436, guid: f0adc9c3b1af52c4fbc07d864db5f253, type: 3}
