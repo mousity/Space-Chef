@@ -12,7 +12,7 @@ public class DispenserStation : MonoBehaviour, IInteractable
 
         if (success)
         {
-            Debug.Log("Dispensed: " + ingredientId.type.displayName);
+            Debug.Log("Dispensed: " + ingredientId);
         } else
         {
             Debug.Log("Player inventory full");
