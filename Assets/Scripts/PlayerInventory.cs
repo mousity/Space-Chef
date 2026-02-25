@@ -34,4 +34,9 @@ public class PlayerInventory : MonoBehaviour
         heldIngredientId = ingredient;
         return temp;
     }
+
+    public void TrashItem()
+    {
+        heldIngredientId = null;
+    }
 }
