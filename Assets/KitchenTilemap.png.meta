@@ -231,6 +231,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: KitchenTilemap_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a51202a62504144b7baf1ee694498a
+      internalID: 198925472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KitchenTilemap_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2a7cf2cc714bc498dc87cfd3200698
+      internalID: 554802214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -253,6 +297,8 @@ TextureImporter:
       KitchenTilemap_3: -356656236
       KitchenTilemap_4: 730169336
       KitchenTilemap_5: -902802197
+      KitchenTilemap_6: 198925472
+      KitchenTilemap_7: 554802214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
