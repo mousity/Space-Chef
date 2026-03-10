@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     public IngredientItem heldIngredientId;
+    private SpriteRenderer sr;
 
     // Check if the player already has an item
     public bool HasItem()
