@@ -4,7 +4,7 @@ using UnityEngine;
 public class CounterStation : MonoBehaviour, IInteractable
 {
     public StationType stationType;
-    public IngredientItem heldItem;
+    public IngredientItem heldItem = null;
 
     public void Interact(PlayerInventory player)
     {

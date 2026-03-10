@@ -5,6 +5,11 @@ public class PlayerInventory : MonoBehaviour
     public IngredientItem heldIngredientId;
     private SpriteRenderer sr;
 
+    public void Awake()
+    {
+        sr = transform.Find("HeldItemVisual").GetComponent<SpriteRenderer>();
+    }
+
     // Check if the player already has an item
     public bool HasItem()
     {
@@ -16,7 +21,7 @@ public class PlayerInventory : MonoBehaviour
         if(HasItem())
             return false;
         heldIngredientId = ingredientId;
-        sr = heldIngredientId.GetComponent<SpriteRenderer>();
+        sr.sprite = heldIngredientId.type.GetSprite(heldIngredientId.status);
         return true;
     }
 
@@ -39,5 +44,11 @@ public class PlayerInventory : MonoBehaviour
     public void TrashItem()
     {
         heldIngredientId = null;
+        DisableItemSprite();
+    }
+
+    public void DisableItemSprite()
+    {
+        sr.sprite = null;
     }
 }
