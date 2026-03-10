@@ -146,6 +146,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: CatMap_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 96
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b11d38a2f8a9fe4d80f6e42b321f42f
+      internalID: -1178563085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -164,6 +186,7 @@ TextureImporter:
     nameFileIdTable:
       CatMap_0: 1170152035767605019
       CatMap_1: -3516535506132994580
+      CatMap_2: -1178563085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

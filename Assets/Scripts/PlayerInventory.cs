@@ -15,8 +15,8 @@ public class PlayerInventory : MonoBehaviour
     {
         if(HasItem())
             return false;
-
         heldIngredientId = ingredientId;
+        sr = heldIngredientId.GetComponent<SpriteRenderer>();
         return true;
     }
 
