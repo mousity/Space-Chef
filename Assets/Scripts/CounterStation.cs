@@ -8,10 +8,6 @@ public class CounterStation : MonoBehaviour, IInteractable
     public IngredientItem heldItem = null;
     [SerializeField] private SpriteRenderer objectRenderer;
 
-    private void Awake()
-    {
-    }
-
     public void Interact(PlayerInventory player)
     {
         if(player.heldIngredientId != null)
@@ -24,7 +20,7 @@ public class CounterStation : MonoBehaviour, IInteractable
 
         if(heldItem)
         {
-            objectRenderer.sprite = heldItem.type.GetSprite(heldItem.status);
+            objectRenderer.sprite = heldItem.GetCurrentSprite();
         } else
         {
             objectRenderer.sprite = null;

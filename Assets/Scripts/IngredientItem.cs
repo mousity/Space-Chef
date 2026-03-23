@@ -40,4 +40,9 @@ public class IngredientItem : MonoBehaviour
         sr.sprite = type.GetSprite(status);
     }
 
+    public Sprite GetCurrentSprite()
+    {
+        return type.GetSprite(status);
+    }
+
 }
