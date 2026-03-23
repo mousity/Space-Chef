@@ -30,6 +30,7 @@ public class PlayerInventory : MonoBehaviour
     {
         IngredientItem temp = heldIngredientId;
         heldIngredientId = null;
+        DisableItemSprite();
         return temp;
     }
 
@@ -38,6 +39,7 @@ public class PlayerInventory : MonoBehaviour
     {
         IngredientItem temp = heldIngredientId;
         heldIngredientId = ingredient;
+        EnableItemSprite(heldIngredientId.type.GetSprite(heldIngredientId.status));
         return temp;
     }
 
@@ -50,5 +52,9 @@ public class PlayerInventory : MonoBehaviour
     public void DisableItemSprite()
     {
         sr.sprite = null;
+    }
+
+    public void EnableItemSprite(Sprite sp){
+        sr.sprite = sp;
     }
 }
