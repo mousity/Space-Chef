@@ -24,7 +24,7 @@ public class CounterStation : MonoBehaviour, IInteractable
 
         if(heldItem)
         {
-            objectRenderer.sprite = heldItem.sr.sprite;
+            objectRenderer.sprite = heldItem.type.GetSprite(heldItem.status);
         } else
         {
             objectRenderer.sprite = null;
