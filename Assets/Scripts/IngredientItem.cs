@@ -5,7 +5,7 @@ public class IngredientItem : MonoBehaviour
 {
     public Ingredient type;
     public IngredientStatus status;
-    private SpriteRenderer sr;
+    public SpriteRenderer sr;
 
     public IngredientItem(Ingredient type, IngredientStatus status)
     {

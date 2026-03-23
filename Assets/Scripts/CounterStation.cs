@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 
@@ -5,6 +6,11 @@ public class CounterStation : MonoBehaviour, IInteractable
 {
     public StationType stationType;
     public IngredientItem heldItem = null;
+    [SerializeField] private SpriteRenderer objectRenderer;
+
+    private void Awake()
+    {
+    }
 
     public void Interact(PlayerInventory player)
     {
@@ -14,6 +20,14 @@ public class CounterStation : MonoBehaviour, IInteractable
         } else
         {
             heldItem = player.HoldOrSwap(heldItem);
+        }
+
+        if(heldItem)
+        {
+            objectRenderer.sprite = heldItem.sr.sprite;
+        } else
+        {
+            objectRenderer.sprite = null;
         }
     }
 }
