@@ -7,6 +7,12 @@ public class CounterStation : MonoBehaviour, IInteractable
     public StationType stationType;
     public IngredientItem heldItem = null;
     [SerializeField] private SpriteRenderer objectRenderer;
+    
+    [SerializeField]private Sprite northSprite;
+    [SerializeField]private Sprite southSprite;
+    [SerializeField]private Sprite eastSprite;
+    [SerializeField]private Sprite westSprite;
+    
 
     public void Interact(PlayerInventory player)
     {
