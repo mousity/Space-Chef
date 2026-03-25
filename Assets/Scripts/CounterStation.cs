@@ -8,7 +8,7 @@ public class CounterStation : MonoBehaviour, IInteractable
     public IngredientItem heldItem = null;
     [SerializeField] private SpriteRenderer objectRenderer;
     
-    [SerializeField] private CounterFacing facing;
+    [SerializeField] private FacingDirection facing;
     [SerializeField]private Sprite northSprite;
     [SerializeField]private Sprite southSprite;
     [SerializeField]private Sprite eastSprite;
